@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorSecondaryDark</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:colorButtonNormal" tools:targetApi="lollipop">@color/colorSecondary</item>
+        <item name="android:colorSecondary" tools:targetApi="n_mr1">@color/colorSecondary</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:actionBarTheme" tools:targetApi="lollipop">@style/AppTheme.ActionBarStyle</item>
+    </style>
+
+    <style name="AppTheme.ActionBarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/textColorActionBar</item>
+        <item name="android:textColorSecondary">@color/textColorActionBar</item>
+        <item name="actionMenuTextColor">@color/textColorActionBar</item>
+        <item name="colorControlNormal">@color/textColorActionBar</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorSecondaryDark</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:colorButtonNormal" tools:targetApi="lollipop">@color/colorSecondary</item>
+        <item name="android:colorSecondary" tools:targetApi="n_mr1">@color/colorSecondary</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+    </style>
+
+</resources>

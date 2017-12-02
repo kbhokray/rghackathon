@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/homeentry_imagecontainer"
+        android:layout_width="85dp"
+        android:layout_height="85dp">
+
+        <ImageView
+            android:id="@+id/homeentry_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_map"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginRight="55dp"
+        android:layout_toRightOf="@id/homeentry_imagecontainer"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/homeentry_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Category"
+            android:textColor="#000000"
+            android:alpha="0.87"/>
+        <TextView
+            android:id="@+id/homeentry_expln"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homeentry_category"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:alpha="0.54"
+            android:text="Ipsum lorum"/>
+    </RelativeLayout>
+    <View
+        android:layout_below="@id/homeentry_imagecontainer"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#000"
+        android:alpha="0.12"/>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rupiee.android">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".RuipeeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".home.HomeActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".investor.TxActivity" />
+        <activity android:name=".mfi.user.RegisterUserActivity" />
+        <activity android:name=".mfi.transfer.TransferActivity" />
+
+        <meta-data android:name="AA_DB_NAME" android:value="RUPIEE"/>
+        <meta-data android:name="AA_DB_VERSION" android:value="0"/>
+        <meta-data android:name="AA_MODELS" android:value="com.rupiee.android.investor.TxEntry,com.rupiee.android.mfi.user.User,com.rupiee.android.mfi.loan.Loan"/>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="6e2a3bd4c7344afd4e8b2c4e9c3848049d56c0b3" />
+
+        <service android:name=".investor.BalanceService" />
+        <service android:name=".investor.UploadTxService" />
+        <service android:name=".mfi.user.RegisterUserService" />
+        <service android:name=".mfi.loan.GetInvestmentsService" />
+        <service android:name=".mfi.transfer.GetAllBalancesService" />
+        <service android:name=".mfi.transfer.TransferAmountService" />
+    </application>
+</manifest>

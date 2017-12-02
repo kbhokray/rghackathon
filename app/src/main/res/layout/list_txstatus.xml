@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tx_imagecontainer"
+        android:layout_width="85dp"
+        android:layout_height="85dp">
+
+        <com.rupiee.android.utils.identicon.SymmetricIdenticon
+            android:id="@+id/tx_bcid"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tx_contentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/tx_imagecontainer"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tx_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.87"
+            android:text="3000"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx_amount"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <TextView
+                android:id="@+id/tx_idlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.54"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:text="id: "
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tx_id"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tx_idlabel"
+                android:alpha="0.54"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="0xc3263844e50bde6ae5a2bcfc84dc284bbf131e50ebcbcd12df4c8da66f350c32"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/tx_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.54"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_waiting"/>
+
+            <TextView
+                android:id="@+id/tx_statlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tx_stat"
+                android:alpha="0.54"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:text="status: "
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@id/tx_imagecontainer"
+        android:alpha="0.12"
+        android:background="#000" />
+</RelativeLayout>

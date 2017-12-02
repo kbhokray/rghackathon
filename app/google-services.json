@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "582134675061",
+    "firebase_url": "https://rupiee-feeb3.firebaseio.com",
+    "project_id": "rupiee-feeb3",
+    "storage_bucket": "rupiee-feeb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582134675061:android:808aaab9ab6d91d6",
+        "android_client_info": {
+          "package_name": "com.rupiee.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582134675061-u6f48s3pvis930790h81i5fb66t5hoel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_uDD79sBvJAXEWRPJBM2NfJbFjuckqIE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mfiuser_form"
+            android:icon="@drawable/ic_registry"
+            android:title="Register Form" />
+        <item
+            android:id="@+id/nav_mfiuser_list"
+            android:icon="@drawable/ic_list"
+            android:title="User List" />
+    </group>
+</menu>

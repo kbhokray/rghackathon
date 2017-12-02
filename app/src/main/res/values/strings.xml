@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Rupiee</string>
+    <string name="drawer_open">Page</string>
+    <string name="drawer_close">Close</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_loan_create"
+            android:icon="@drawable/ic_registry"
+            android:title="Create Loan" />
+        <item
+            android:id="@+id/nav_loan_list"
+            android:icon="@drawable/ic_list"
+            android:title="Active Loans" />
+    </group>
+</menu>

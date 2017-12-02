@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/transfer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:text="FROM ACCOUNT: "
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/transfer_investors"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="Balance: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transfer_from_balance"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:text="AMOUNT"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="Acc: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transfer_from_addr"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="0xinvestoraccountnumber"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:text="TO ACCOUNT: "
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/transfer_borrowers"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="Balance: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transfer_to_balance"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:text="AMOUNT"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="Acc: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transfer_to_addr"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="2"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:gravity="center_vertical"
+                            android:text="0xborroweraccountnumber"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:text="Amount: "
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/transfer_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Amount"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/transfer_submit"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Submit"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <include layout="@layout/include_progress"/>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>
